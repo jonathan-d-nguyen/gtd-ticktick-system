@@ -33,10 +33,10 @@
   <p align="center">
     A comprehensive data processing pipeline for analyzing TickTick CSV exports to identify high-impact tasks and assess productivity patterns using Getting Things Done (GTD) methodology. Normalizes non-standard TickTick CSV exports, categorizes tasks by impact dimensions, and provides actionable insights for task prioritization.
     <br />
-    <a href="https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/jonathan-d-nguyen/gtd-ticktick-system"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/jonathan-d-nguyen/gtd-ticktick-system/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
   </p>
 </div>
 
@@ -183,8 +183,8 @@ Get up and running quickly with basic task analysis. For advanced features, see 
 1. **Clone the repository**
 
    ```sh
-   git clone https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis.git
-   cd ticktick-gtd-analysis
+   git clone https://github.com/jonathan-d-nguyen/gtd-ticktick-system.git
+   cd gtd-ticktick-system
    ```
 
 2. **Add your TickTick CSV export**
@@ -206,9 +206,10 @@ Get up and running quickly with basic task analysis. For advanced features, see 
    ```
 
    Output example:
+
    ```
    Successfully normalized CSV file. Output saved to TickTick-backup-2025-06-22-normalized.csv
-   
+
    Task Matrix by List Names:
    List Name                                     Uncompleted  Completed  Cancelled  Total
    ---------------------------------------------------------------------------
@@ -244,6 +245,7 @@ Get up and running quickly with basic task analysis. For advanced features, see 
 The `csv-normalizer.py` script handles TickTick's non-standard CSV format:
 
 **TickTick CSV Issues Addressed:**
+
 - Removes metadata header (lines 1-6)
 - Preserves multiline fields with proper quoting
 - Handles Unicode characters and special formatting
@@ -276,6 +278,7 @@ python3 csv-normalizer.py input.csv
 Generate comprehensive task statistics across all lists:
 
 **Features:**
+
 - Task counts by completion status (uncompleted, completed, cancelled)
 - List-based organization
 - Total task summaries
@@ -303,24 +306,28 @@ The system supports identification of high-leverage tasks using GTD methodology:
 **Five-Dimension Impact Assessment:**
 
 1. **Financial Impact** (1-5 scale)
+
    - Immediate financial benefit
    - Long-term financial security
    - Passive income generation
    - Expense reduction
 
 2. **Career Growth** (1-5 scale)
+
    - Skill development
    - Network expansion
    - Credential acquisition
    - Professional advancement
 
 3. **Home Foundation** (1-5 scale)
+
    - Safety improvements
    - Essential repairs
    - Organization systems
    - Infrastructure upgrades
 
 4. **Family Support** (1-5 scale)
+
    - Practical assistance
    - Emotional support
    - Educational support
@@ -349,6 +356,7 @@ python3 display_columns-interactive.py --menu
 ```
 
 **Menu Features:**
+
 - CSV file selection (most recent first)
 - Multi-list selection (Projects, OneOff Tasks, etc.)
 - Status filtering (uncompleted, completed, cancelled)
@@ -361,6 +369,7 @@ python3 display_columns-interactive.py
 ```
 
 **Default Filters:**
+
 - Lists: Folder contains 'projects' OR list contains 'oneoff'
 - Status: Uncompleted only
 - Auto-selects most recent CSV file
@@ -381,11 +390,13 @@ Update project documentation            Work      OneOff Tasks 2.low-effort  Med
 **Generated Files:**
 
 1. **Normalized CSV**: `input-normalized.csv`
+
    - Standard CSV format
    - Ready for data analysis tools
    - Preserves all original data
 
 2. **Task Matrix**: Console output
+
    - Summary statistics by list
    - Status distribution
    - Total counts
@@ -398,6 +409,7 @@ Update project documentation            Work      OneOff Tasks 2.low-effort  Med
 **Integration with Analysis Tools:**
 
 The normalized CSV files can be imported into:
+
 - Excel/Google Sheets for pivot tables
 - Tableau/Power BI for advanced visualization
 - Pandas/R for statistical analysis
@@ -452,7 +464,7 @@ The normalized CSV files can be imported into:
   - [x] Project vs. single-action distinction
   - [x] Status-based filtering (uncompleted, completed, cancelled)
 
-See the [open issues](https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/jonathan-d-nguyen/gtd-ticktick-system/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -484,6 +496,7 @@ Don't forget to give the project a star! Thanks again!
 ### Data Privacy
 
 When contributing:
+
 - Use anonymized or example data only
 - Do not include personal task content
 - Exclude real TickTick exports from commits
@@ -493,8 +506,8 @@ When contributing:
 
 ### 5.1. Top contributors:
 
-<a href="https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jonathan-d-nguyen/ticktick-gtd-analysis" alt="contrib.rocks image" />
+<a href="https://github.com/jonathan-d-nguyen/gtd-ticktick-system/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jonathan-d-nguyen/gtd-ticktick-system" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -513,7 +526,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Jonathan Nguyen - jonathan@jdnguyen.tech
 
-Project Link: [https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis](https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis)
+Project Link: [https://github.com/jonathan-d-nguyen/gtd-ticktick-system](https://github.com/jonathan-d-nguyen/gtd-ticktick-system)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -532,16 +545,16 @@ Project Link: [https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis](https
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/jonathan-d-nguyen/ticktick-gtd-analysis.svg?style=for-the-badge
-[contributors-url]: https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jonathan-d-nguyen/ticktick-gtd-analysis.svg?style=for-the-badge
-[forks-url]: https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/network/members
-[stars-shield]: https://img.shields.io/github/stars/jonathan-d-nguyen/ticktick-gtd-analysis.svg?style=for-the-badge
-[stars-url]: https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jonathan-d-nguyen/ticktick-gtd-analysis.svg?style=for-the-badge
-[issues-url]: https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/issues
-[license-shield]: https://img.shields.io/github/license/jonathan-d-nguyen/ticktick-gtd-analysis.svg?style=for-the-badge
-[license-url]: https://github.com/jonathan-d-nguyen/ticktick-gtd-analysis/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/jonathan-d-nguyen/gtd-ticktick-system.svg?style=for-the-badge
+[contributors-url]: https://github.com/jonathan-d-nguyen/gtd-ticktick-system/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jonathan-d-nguyen/gtd-ticktick-system.svg?style=for-the-badge
+[forks-url]: https://github.com/jonathan-d-nguyen/gtd-ticktick-system/network/members
+[stars-shield]: https://img.shields.io/github/stars/jonathan-d-nguyen/gtd-ticktick-system.svg?style=for-the-badge
+[stars-url]: https://github.com/jonathan-d-nguyen/gtd-ticktick-system/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jonathan-d-nguyen/gtd-ticktick-system.svg?style=for-the-badge
+[issues-url]: https://github.com/jonathan-d-nguyen/gtd-ticktick-system/issues
+[license-shield]: https://img.shields.io/github/license/jonathan-d-nguyen/gtd-ticktick-system.svg?style=for-the-badge
+[license-url]: https://github.com/jonathan-d-nguyen/gtd-ticktick-system/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/JonathanDanhNguyen
 [product-screenshot]: images/screenshot.png
