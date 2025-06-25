@@ -1,0 +1,356 @@
+.history
+archive/
+
+# GTD System Repository .gitignore
+
+# ==============================================
+# Personal Configuration and Data
+# ==============================================
+
+# Personal TickTick exports or backups
+*.ticktick
+ticktick-export/
+personal-tasks/
+my-tasks/
+
+# Personal implementation notes
+personal-*.md
+private-*.md
+*-personal.md
+*-private.md
+
+# Local configuration files
+config.local.*
+settings.local.*
+.env.local
+
+# Personal workspace configurations
+workspace-personal/
+my-workspace/
+personal-config/
+
+# ==============================================
+# Obsidian Specific
+# ==============================================
+
+# Obsidian workspace and app settings
+.obsidian/
+.obsidian/workspace*
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+.obsidian/core-plugins.json
+.obsidian/community-plugins.json
+
+# Obsidian graph and cache
+.obsidian/graph.json
+.obsidian/cache
+
+# Personal vault configurations
+vault-config/
+.vault/
+
+# ==============================================
+# Documentation Drafts and Work-in-Progress
+# ==============================================
+
+# Draft files
+*-draft.md
+*-wip.md
+draft-*/
+drafts/
+
+# Personal notes and sandbox
+sandbox-personal/
+notes-personal/
+*-scratch.md
+scratch/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# ==============================================
+# Development and Editor Files
+# ==============================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ==============================================
+# Operating System Files
+# ==============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================
+# Build and Distribution
+# ==============================================
+
+# Distribution folders
+dist/
+build/
+out/
+
+# Dependency directories
+node_modules/
+
+# Log files
+*.log
+logs/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ==============================================
+# Archive and Backup Files
+# ==============================================
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Backup directories
+backup/
+backups/
+archive-personal/
+
+# ==============================================
+# Temporary and Test Files
+# ==============================================
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Test files (if you add any automation)
+test-personal/
+*.test.local
+
+# ==============================================
+# Sensitive Information Patterns
+# ==============================================
+
+# Files that might contain personal paths or data
+*-paths.md
+*-local-config.md
+personal-implementation/
+
+# Authentication or API keys (if any automation is added)
+*.key
+*.pem
+*.p12
+*.pfx
+auth/
+credentials/
+
+# ==============================================
+# Project-Specific Exclusions
+# ==============================================
+
+# Any personal TickTick filter exports
+filter-exports/
+personal-filters/
+
+# Personal project lists
+projects-personal/
+my-projects/
+
+# Individual implementation files
+implementation-personal/
+my-implementation/
+
+# Custom modifications
+custom-personal/
+personal-mods/
+
+# TickTick Scripts Repository .gitignore
+
+# ==============================================
+# Personal TickTick Data
+# ==============================================
+
+# Personal TickTick exports (exclude all real backups)
+TickTick-backup-*.csv
+ticktick-notes_only.csv
+
+# Personal normalized outputs
+*-normalized.csv
+*-normalized-*.csv
+
+# Any personal task exports
+my-tasks*.csv
+personal-*.csv
+*-personal.csv
+
+# ==============================================
+# Keep Example Files (Override exclusions above)
+# ==============================================
+
+# Example files to include in repo
+!*-example.csv
+!example-*.csv
+!sample-*.csv
+
+# ==============================================
+# Development Files
+# ==============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================================
+# Operating System Files
+# ==============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ==============================================
+# Logs and Temporary Files
+# ==============================================
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# ==============================================
+# API Keys and Secrets
+# ==============================================
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# API configuration
+config.json
+secrets.json
+api-keys.txt
+
+# Authentication files
+*.key
+*.pem
+auth/
+credentials/
